@@ -1,0 +1,34 @@
+/* bebas-neue-regular - latin */
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./fonts/bebas-neue-400.woff2") format("woff2"), url("./fonts/bebas-neue-400.woff") format("woff");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./fonts/bebas-neue-700.woff") format("woff"), url("./fonts/bebas-neue-700.woff2") format("woff2");
+}
+/* jost-300 - latin_cyrillic */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("./fonts/jost-300.woff2") format("woff2"), url("./fonts/jost-300.woff") format("woff");
+}
+/* jost-regular - latin_cyrillic */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./fonts/jost-400.woff2") format("woff2"), url("./fonts/jost-400.woff") format("woff");
+}
+/* jost-700 - latin_cyrillic */
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("./fonts/jost-700.woff2") format("woff2"), url("./fonts/jost-700.woff") format("woff");
+}

@@ -1,0 +1,22 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: max-content;
+  text-decoration: none;
+  padding: 12px 18px;
+  height: 48px;
+  background-color: var(--green);
+  border: 1px solid;
+  border-color: var(--green);
+  cursor: pointer;
+  box-shadow: none;
+  border-radius: 40px;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: var(--jost);
+}
