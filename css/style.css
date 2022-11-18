@@ -276,6 +276,7 @@ input[type=radio].visually-hidden {
 
 .header-sticky .header {
   background-color: var(--black);
+  padding: 12px 0;
 }
 
 .logo {
@@ -461,20 +462,109 @@ input[type=radio].visually-hidden {
   grid-template-rows: 1fr auto;
   height: 100vh;
   padding: 20px 0;
+  padding-top: 130px;
+  gap: 16px;
+  min-height: 530px;
 }
 .first__details {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.first__button {
+  padding: 28px 40px;
+  height: initial;
+  font-size: 16px;
+}
 .first .wrapper {
   position: relative;
   z-index: 2;
+}
+.first .title {
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.first .title span {
+  color: #00f0c0;
+}
+@media (max-width: 1300px) {
+  .first .title {
+    font-size: 155px;
+  }
+}
+@media (max-width: 1024px) {
+  .first .title {
+    font-size: 120px;
+  }
+  .first .link-more__text {
+    font-size: 55px;
+  }
+}
+@media (max-width: 768px) {
+  .first .title {
+    font-size: 90px;
+  }
+  .first .first__button {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+  .first .link-more__text {
+    font-size: 45px;
+  }
+  .first__flex {
+    padding-top: 120px;
+  }
+}
+@media (max-width: 550px) {
+  .first .title {
+    font-size: 75px;
+  }
+}
+@media (max-width: 425px) {
+  .first .title {
+    font-size: 60px;
+  }
+  .first .subtitle {
+    font-size: 18px;
+  }
+  .first .link-more__text {
+    font-size: 40px;
+  }
+  .first .link-more .button {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 370px) {
+  .first .title {
+    font-size: 55px;
+  }
+}
+
+.subtitle {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 0.6em;
 }
 
 .link-more {
   display: flex;
   align-items: center;
+}
+.link-more .button {
+  width: 48px;
+  height: 48px;
+  max-width: initial;
+  padding: 1%;
 }
 .link-more__text {
   font-family: var(--bebas);

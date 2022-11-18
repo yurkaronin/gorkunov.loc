@@ -9,9 +9,8 @@
   &::after {
     content: "";
     display: block;
-    background:
-    linear-gradient(180deg, rgba(27, 30, 30, 0.6) -0.93%, rgba(27, 30, 30, 0) 19.63%),
-    linear-gradient(0deg, #1b1e1e 0%, rgba(27, 30, 30, 0) 100%);
+    background: linear-gradient(180deg, rgba(27, 30, 30, 0.6) -0.93%, rgba(27, 30, 30, 0) 19.63%),
+      linear-gradient(0deg, #1b1e1e 0%, rgba(27, 30, 30, 0) 100%);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -25,19 +24,119 @@
     grid-template-rows: 1fr auto;
     height: 100vh;
     padding: 20px 0;
+    padding-top: 130px;
+    gap: 16px;
+    min-height: 530px;
   }
   &__details {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+  &__button {
+    padding: 28px 40px;
+    height: initial;
+    font-size: 16px;
+  }
   .wrapper {
     position: relative;
     z-index: 2;
   }
+  .title {
+    font-weight: 700;
+    font-size: 180px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+
+    span {
+      color: #00f0c0;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .title {
+      font-size: 155px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .title {
+      font-size: 120px;
+    }
+    .link-more {
+      &__text {
+        font-size: 55px;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .title {
+      font-size: 90px;
+    }
+    .first__button {
+      padding: 20px 30px;
+      font-size: 14px;
+    }
+    .link-more {
+      &__text {
+        font-size: 45px;
+      }
+    }
+    &__flex {
+      padding-top: 120px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .title {
+      font-size: 75px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .title {
+      font-size: 60px;
+    }
+    .subtitle {
+      font-size: 18px;
+    }
+    .link-more {
+      &__text {
+        font-size: 40px;
+      }
+      .button {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 370px) {
+    .title {
+      font-size: 55px;
+    }
+  }
+}
+.subtitle {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 0.6em;
 }
 
 .link-more {
+  .button {
+    width: 48px;
+    height: 48px;
+    max-width: initial;
+    padding: 1%;
+  }
   &__text {
     font-family: var(--bebas);
     font-weight: 700;
