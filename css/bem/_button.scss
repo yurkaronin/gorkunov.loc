@@ -19,4 +19,9 @@
   font-weight: 700;
   font-size: 14px;
   font-family: var(--jost);
+
+  &--transparent {
+    background-color: transparent;
+    color: var(--green);
+  }
 }
