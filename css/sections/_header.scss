@@ -36,6 +36,12 @@
     margin-left: 16px;
     max-width: 112px;
   }
+  .tel {
+    max-width: 210px;
+    margin-right: 16px;
+    margin-left: 16px;
+    flex-shrink: 0;
+  }
 
   @media (max-width: 1250px) {
     &__menu-button {
@@ -48,12 +54,7 @@
     .logo {
       margin-right: auto;
     }
-    .tel {
-      max-width: 210px;
-      margin-right: 16px;
-      margin-left: 16px;
-      flex-shrink: 0;
-    }
+
   }
 
   @media (max-width: 900px) {
