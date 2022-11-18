@@ -1,0 +1,60 @@
+.first {
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/bg/video.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::after {
+    content: "";
+    display: block;
+    background:
+    linear-gradient(180deg, rgba(27, 30, 30, 0.6) -0.93%, rgba(27, 30, 30, 0) 19.63%),
+    linear-gradient(0deg, #1b1e1e 0%, rgba(27, 30, 30, 0) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__flex {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+    padding: 20px 0;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .wrapper {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.link-more {
+  &__text {
+    font-family: var(--bebas);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  display: flex;
+  align-items: center;
+  .button {
+    width: 48px;
+    height: 48px;
+    pointer-events: none;
+    cursor: initial;
+    margin-right: 24px;
+    background-color: transparent;
+  }
+}
