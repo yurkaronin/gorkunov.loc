@@ -840,6 +840,26 @@ input[type=radio].visually-hidden {
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.5);
 }
+@media (max-width: 1024px) {
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 425px) {
+  .benefits__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .benefits__icon {
+    margin-bottom: 16px;
+  }
+  .benefits__name {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
 
 .footer {
   color: #ffffff;

@@ -1,5 +1,4 @@
 .benefits {
-
   &__grid {
     padding: 50px 0 40px;
     list-style: none;
@@ -31,5 +30,26 @@
     font-size: 16px;
     line-height: 1.5;
     color: rgba(#ffffff, 0.5);
+  }
+
+  @media (max-width: 1024px) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 425px) {
+    &__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+    &__icon {
+      margin-bottom: 16px;
+    }
+    &__name {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
   }
 }
