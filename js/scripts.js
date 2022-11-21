@@ -24,9 +24,9 @@ function headerChange() {
 document.addEventListener("DOMContentLoaded", () => {
   // подключаем файлы тут
   includeFiles("./js/parts/accordion.js");
-  includeFiles("./js/parts/sliders.js");
-  includeFiles("./js/parts/input-validate.js");
-  includeFiles("./js/parts/yandex.map.js");
+  // includeFiles("./js/parts/sliders.js");
+  // includeFiles("./js/parts/input-validate.js");
+  // includeFiles("./js/parts/yandex.map.js");
 
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку

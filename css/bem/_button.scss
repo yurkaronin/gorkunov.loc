@@ -18,10 +18,19 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
+  line-height: 1;
   font-family: var(--jost);
+
 
   &--transparent {
     background-color: transparent;
     color: var(--green);
+  }
+  &--icon {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-left: 10px;
+    }
   }
 }
