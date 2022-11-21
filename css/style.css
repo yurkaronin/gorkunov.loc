@@ -259,6 +259,16 @@ input[type=radio].visually-hidden {
 .accordion + .accordion {
   border-top: none;
 }
+@media (max-width: 920px) {
+  .accordion__top.active + .accordion__body {
+    padding: 16px 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  .accordion__top {
+    padding: 16px;
+  }
+}
 
 .header {
   padding: 32px 0 24px;
@@ -697,6 +707,52 @@ input[type=radio].visually-hidden {
 }
 .services__buttons .button:last-child {
   margin-right: 0;
+}
+@media (max-width: 920px) {
+  .services__item-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .services__item-right {
+    order: -1;
+  }
+  .services__item-right img {
+    height: 320px;
+    width: 440px;
+    object-fit: contain;
+    display: block;
+    margin-right: auto;
+  }
+}
+@media (max-width: 768px) {
+  .services__subtitle {
+    font-size: 63px;
+  }
+  .services__lead {
+    font-size: 20px;
+    margin-bottom: 1.4em;
+  }
+  .services__text {
+    margin: 1.4em 0;
+    font-size: 16px;
+  }
+}
+@media (max-width: 425px) {
+  .services__subtitle {
+    font-size: 40px;
+  }
+  .services__buttons .button {
+    margin-right: 15px;
+  }
+  .services__item-right img {
+    height: 235px;
+  }
+}
+@media (max-width: 370px) {
+  .services__buttons .button {
+    margin-right: 12px;
+    font-size: 12px;
+  }
 }
 
 .footer {
