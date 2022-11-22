@@ -546,10 +546,10 @@ input[type=radio].visually-hidden {
 .first {
   position: relative;
   overflow: hidden;
-  background-image: url(../img/bg/video.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 1;
 }
 .first::after {
   content: "";
@@ -596,6 +596,23 @@ input[type=radio].visually-hidden {
 }
 .first .title span {
   color: #00f0c0;
+}
+.first__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.first__video video {
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
 }
 @media (max-width: 1300px) {
   .first .title {

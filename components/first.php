@@ -1,11 +1,8 @@
 <section class="first">
   <div class="first__video">
-    <div class="video">
-      <video autoplay controls="false" loop muted playsinline poster="./img/bg/video.jpg">
-        <source src="./video/1.mp4" type="video/mp4">
-      </video>
-
-    </div>
+    <video autoplay controls="false" loop muted playsinline poster="./img/bg/video.jpg">
+      <source src="./video/1.mp4" type="video/mp4">
+    </video>
   </div>
   <div class="wrapper">
     <div class="first__flex">
