@@ -3,11 +3,14 @@
   font-size: 16px;
   font-weight: 400;
   font-family: var(--jost);
-  padding: 31px 0 32px;
+
   &__flex {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding: 31px 0 32px;
+    border-top: 1px solid;
+    border-color: rgba(#ffffff, 0.2);
   }
 
   .copyright {
