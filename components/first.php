@@ -1,4 +1,12 @@
 <section class="first">
+  <div class="first__video">
+    <div class="video">
+      <video autoplay controls="false" loop muted playsinline poster="./img/bg/video.jpg">
+        <source src="./video/1.mp4" type="video/mp4">
+      </video>
+
+    </div>
+  </div>
   <div class="wrapper">
     <div class="first__flex">
       <h1 class="visually-hidden">УК Горкунов: Рынок, инвестиции и консультационные услуги</h1>
