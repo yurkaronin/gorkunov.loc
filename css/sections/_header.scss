@@ -1,5 +1,4 @@
 .header {
-  padding: 32px 0 24px;
   background-color: transparent;
   position: fixed;
   top: 0;
@@ -12,6 +11,8 @@
   &__grid {
     display: flex;
     align-items: center;
+    padding: 32px 0 24px;
+    transition: all 0.3s;
   }
   &__button {
     flex-shrink: 0;
@@ -54,7 +55,6 @@
     .logo {
       margin-right: auto;
     }
-
   }
 
   @media (max-width: 900px) {
@@ -87,12 +87,15 @@
       margin-left: 6px;
     }
   }
-}
 
-// активности
-.header-sticky .header {
-  background-color: var(--black);
-  padding: 12px 0;
+  // активности
+  &-sticky & {
+    background-color: var(--black);
+  }
+
+  &-sticky &__grid {
+    padding: 12px 0;
+  }
 }
 
 .logo {
@@ -127,7 +130,7 @@
     max-width: max-content;
   }
   &__item {
-    margin-right: 40px;
+    margin-right: 6px;
     &:last-child {
       margin-right: 0;
     }
@@ -138,6 +141,14 @@
     line-height: 1.5;
     color: #ffffff;
     font-family: var(--jost);
+    transition: all 0.3s;
+    padding: 13px 20px;
+    border-radius: 24px;
+
+    &:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
   }
 }
 

@@ -1,0 +1,91 @@
+.announce-cards {
+  padding: 100px 0;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  &__item {
+    border: 1px solid;
+    border-color: rgba(#ffffff, 0.2);
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  &__image {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+    padding: 22px;
+
+    img {
+      display: block;
+      max-height: 230px;
+    }
+  }
+  &__name {
+    margin: 0;
+    font-family: var(--bebas);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__text {
+    color: rgba(#ffffff, 0.7);
+    margin: 0;
+    padding-bottom: 21px;
+    border-bottom: 1px solid;
+    border-color: rgba(#ffffff, 0.2);
+    margin-bottom: 23px;
+    font-size: 18px;
+  }
+  &__body {
+    padding: 48px;
+    padding-top: 34px;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 24px;
+    }
+    li {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 16px;
+      margin-bottom: 1.8em;
+    }
+  }
+  &__label {
+    color: rgba(#ffffff, 0.7);
+    line-height: 1;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+  }
+  &__price {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1;
+    text-align: right;
+    color: #00f0c0;
+  }
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    .button {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

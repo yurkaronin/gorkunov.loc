@@ -8,6 +8,8 @@
     grid-template-columns: repeat(4, 1fr);
     border-bottom: 1px solid;
     border-color: rgba(#ffffff, 0.2);
+
+
   }
   &__icon {
     margin-bottom: 19px;
@@ -52,4 +54,9 @@
       margin-bottom: 5px;
     }
   }
+}
+
+.title + .benefits__grid {
+  padding-top: 0;
+  border-bottom: none;
 }
