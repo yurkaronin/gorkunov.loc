@@ -30,6 +30,17 @@
     include './components/announce-cards.php';
     ?>
 
+    <section class="call-to-action">
+      <div class="wrapper">
+        <div class="grid-layer">
+          <div class="grid-layer__left"></div>
+          <div class="grid-layer__right">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <?php
