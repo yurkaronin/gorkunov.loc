@@ -3,7 +3,7 @@
     <div class="service__item">
       <div class="services__item-grid">
         <div class="services__item-left">
-          <h1 class="services__subtitle">Автоследование</h1>
+          <h1 class="title">Автоследование</h1>
           <p class="services__lead">Подключите возможность в автоматическом режиме копировать на свой брокерский
             счет сделки
             опытного трейдера.</p>
@@ -11,7 +11,7 @@
 
           <div class="services__buttons">
 
-            <a class="button" href="#">
+            <a class="button button--big" href="#">
               <span>Следовать</span>
             </a>
 

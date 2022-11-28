@@ -200,6 +200,17 @@ input[type=radio].visually-hidden {
 .button--icon svg {
   margin-left: 10px;
 }
+.button--big {
+  padding: 28px 40px;
+  height: initial;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .button--big {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+}
 
 .title {
   font-weight: 700;
@@ -626,11 +637,6 @@ input[type=radio].visually-hidden {
   flex-direction: column;
   justify-content: center;
 }
-.first__button {
-  padding: 28px 40px;
-  height: initial;
-  font-size: 16px;
-}
 .first .wrapper {
   position: relative;
   z-index: 2;
@@ -679,10 +685,6 @@ input[type=radio].visually-hidden {
 @media (max-width: 768px) {
   .first .title {
     font-size: 90px;
-  }
-  .first .first__button {
-    padding: 20px 30px;
-    font-size: 14px;
   }
   .first .link-more__text {
     font-size: 45px;
@@ -809,6 +811,10 @@ input[type=radio].visually-hidden {
 .services--first-screen {
   padding-top: 0;
 }
+.services--first-screen .title {
+  font-size: 120px;
+  margin-bottom: 0;
+}
 .services--first-screen .services__item-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -833,9 +839,6 @@ input[type=radio].visually-hidden {
 }
 .services--first-screen .services__buttons .button {
   margin-right: 0;
-  padding: 31px 70px;
-  height: initial;
-  font-size: 16px;
 }
 .services--first-screen .services__text {
   margin-bottom: 47px;
@@ -857,9 +860,6 @@ input[type=radio].visually-hidden {
     grid-column-end: initial;
     grid-row-start: initial;
     grid-row-end: initial;
-  }
-  .services .services__subtitle {
-    font-size: 90px;
   }
 }
 @media (max-width: 920px) {
@@ -903,6 +903,9 @@ input[type=radio].visually-hidden {
   }
   .services__item-right img {
     height: 235px;
+  }
+  .services__lead {
+    font-size: 18px;
   }
 }
 @media (max-width: 370px) {
@@ -1013,6 +1016,9 @@ input[type=radio].visually-hidden {
   }
   .personal-card__title {
     font-size: 40px;
+  }
+  .personal-card__lead {
+    font-size: 18px;
   }
 }
 
@@ -1326,17 +1332,14 @@ input[type=radio].visually-hidden {
   }
 }
 @media (max-width: 1024px) {
-  .call-to-action__title {
-    font-size: 67px;
-  }
   .call-to-action .button {
     padding: 1.3em 3em;
     font-size: 14px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .call-to-action__title {
-    font-size: 55px;
+    font-size: 63px;
   }
 }
 @media (max-width: 425px) {

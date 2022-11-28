@@ -51,6 +51,10 @@
 
   &--first-screen {
     padding-top: 0;
+    .title {
+      font-size: 120px;
+      margin-bottom: 0;
+    }
 
     .services__item-grid {
       display: grid;
@@ -77,9 +81,6 @@
     }
     .services__buttons .button {
       margin-right: 0;
-      padding: 31px 70px;
-      height: initial;
-      font-size: 16px;
     }
     .services__text {
       margin-bottom: 47px;
@@ -98,13 +99,6 @@
         grid-column-end: initial;
         grid-row-start: initial;
         grid-row-end: initial;
-        // img {
-        //   height: 320px;
-        //   width: 440px;
-        //   object-fit: contain;
-        //   display: block;
-        //   margin-right: auto;
-        // }
       }
       .services__item-left {
         grid-column-start: initial;
@@ -112,9 +106,6 @@
         grid-row-start: initial;
         grid-row-end: initial;
       }
-    }
-    .services__subtitle {
-      font-size: 90px;
     }
   }
 
@@ -175,6 +166,9 @@
       img {
         height: 235px;
       }
+    }
+    &__lead {
+      font-size: 18px;
     }
   }
   @media (max-width: 370px) {

@@ -43,18 +43,18 @@
     }
   }
   @media (max-width: 1024px) {
-    &__title {
-      font-size: 67px;
-    }
+    // &__title {
+    //   font-size: 67px;
+    // }
     .button {
       padding: 1.3em 3em;
       font-size: 14px;
   }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 768px) {
 
     &__title {
-      font-size: 55px;
+      font-size: 63px;
     }
   }
   @media (max-width: 425px) {

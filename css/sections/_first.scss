@@ -34,11 +34,6 @@
     flex-direction: column;
     justify-content: center;
   }
-  &__button {
-    padding: 28px 40px;
-    height: initial;
-    font-size: 16px;
-  }
   .wrapper {
     position: relative;
     z-index: 2;
@@ -92,10 +87,6 @@
   @media (max-width: 768px) {
     .title {
       font-size: 90px;
-    }
-    .first__button {
-      padding: 20px 30px;
-      font-size: 14px;
     }
     .link-more {
       &__text {
