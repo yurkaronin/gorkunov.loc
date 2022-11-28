@@ -20,4 +20,25 @@
       margin-bottom: 0.5em;
     }
   }
+
+  @media (max-width: 1250px) {
+    &--inner-page {
+      padding-top: 90px;
+    }
+  }
+  @media (max-width: 768px) {
+    &--inner-page {
+      .title {
+        font-size: 64px;
+      }
+    }
+  }
+
+  @media (max-width: 425px) {
+    &--inner-page {
+      .title {
+        font-size: 40px;
+      }
+    }
+  }
 }

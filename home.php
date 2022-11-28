@@ -21,7 +21,7 @@
 
     <?php
     // первый экран главной страницы
-    include 'components/first.php';
+    include 'components/first-screen.php';
     // анонсы направлений услуг
     include 'components/services.php';
     // персональный блок с дядькой

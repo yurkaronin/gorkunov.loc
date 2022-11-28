@@ -153,12 +153,19 @@
     }
   }
 
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
+
   @media (max-width: 650px) {
     &__list {
       grid-template-columns: 1fr;
     }
     &__body li {
       grid-template-columns: 1fr 2fr;
+    }
   }
+  @media (max-width: 425px) {
+    padding: 0;
   }
 }

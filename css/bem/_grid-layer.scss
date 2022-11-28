@@ -17,22 +17,22 @@
     grid-row-start: 1;
     grid-row-end: 1;
   }
-  // @media (max-width: 1024px) {
-  //   grid-template-columns: 1fr 1fr;
-  //   &__right {
-  //     grid-column-start: initial;
-  //     grid-column-end: initial;
-  //     grid-row-start: initial;
-  //     grid-row-end: initial;
-  //   }
-  //   &__left {
-  //     grid-column-start: initial;
-  //     grid-column-end: initial;
-  //     grid-row-start: initial;
-  //     grid-row-end: initial;
-  //   }
-  // }
+  .title {
+    font-size: 120px;
+    margin-bottom: 0;
+  }
 
+  @media (max-width: 1400px) {
+    .title {
+      font-size: 95px;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    .title {
+      font-size: 80px;
+    }
+  }
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 0;

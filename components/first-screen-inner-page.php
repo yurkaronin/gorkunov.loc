@@ -1,26 +1,26 @@
-<section class="services services--first-screen">
+<section class="services services--first-screen first-screen-inner">
   <div class="wrapper">
-    <div class="service__item">
-      <div class="services__item-grid">
-        <div class="services__item-left">
-          <h1 class="title">Автоследование</h1>
-          <p class="services__lead">Подключите возможность в автоматическом режиме копировать на свой брокерский
-            счет сделки
-            опытного трейдера.</p>
-          <p class="services__text">Сервис автоследование полностью автоматизирован!</p>
 
-          <div class="services__buttons">
+    <div class="grid-layer">
+      <div class="grid-layer__left">
+        <h1 class="title title--big">Автоследование</h1>
+        <p class="services__lead subtitle">Подключите возможность в автоматическом режиме копировать на свой брокерский
+          счет сделки
+          опытного трейдера.</p>
+        <p class="services__text text">Сервис автоследование полностью автоматизирован!</p>
 
-            <a class="button button--big" href="#">
-              <span>Следовать</span>
-            </a>
+        <div class="services__buttons">
 
-          </div>
-        </div>
-        <div class="services__item-right">
-          <img src="./img/services/2.jpg" alt="картинка услуги" width="808">
+          <a class="button button--big" href="#">
+            <span>Следовать</span>
+          </a>
+
         </div>
       </div>
+      <div class="grid-layer__right">
+        <img src="./img/services/2.jpg" alt="картинка услуги" width="808">
+      </div>
     </div>
+
   </div>
 </section>

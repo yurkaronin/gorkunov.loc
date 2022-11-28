@@ -1,13 +1,13 @@
-<section class="first">
-  <div class="first__video">
+<section class="first-screen">
+  <div class="first-screen__video">
     <video autoplay controls="false" loop muted playsinline poster="./img/bg/video.jpg">
       <source src="./video/1.mp4" type="video/mp4">
     </video>
   </div>
   <div class="wrapper">
-    <div class="first__flex">
+    <div class="first-screen__flex">
       <h1 class="visually-hidden">УК Горкунов: Рынок, инвестиции и консультационные услуги</h1>
-      <div class="first__details">
+      <div class="first-screen__details">
         <p class="subtitle">Инвестируем в фондовый рынок вместе</p>
         <p class="title"><span>2022</span> - время возможностей</p>
 
