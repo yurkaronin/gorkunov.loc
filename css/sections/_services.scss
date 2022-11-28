@@ -50,61 +50,8 @@
       }
     }
   }
-
-  // &--first-screen {
-  //   padding-top: 0;
-
-  //   .services__item-grid {
-  //     display: grid;
-  //     grid-template-columns: repeat(12, 1fr);
-  //     // align-items: flex-start;
-  //   }
-  //   .services__item-left {
-  //     z-index: 1;
-  //     grid-column-start: 1;
-  //     grid-column-end: 7;
-  //     grid-row-start: 1;
-  //     grid-row-end: 1;
-  //   }
-  //   .services__item-right {
-  //     z-index: 0;
-  //     grid-column-start: 6;
-  //     grid-column-end: 13;
-  //     grid-row-start: 1;
-  //     grid-row-end: 1;
-  //   }
-  //   .services__subtitle {
-  //     font-size: 120px;
-  //     margin-bottom: 0;
-  //   }
-  //   .services__buttons .button {
-  //     margin-right: 0;
-  //   }
-  //   .services__text {
-  //     margin-bottom: 47px;
-  //   }
-  // }
-
-  @media (max-width: 1200px) {
-    // &--first-screen {
-    //   .services__item-grid {
-    //     grid-template-columns: 1fr;
-    //     gap: 0;
-    //   }
-    //   .services__item-right {
-    //     order: -1;
-    //     grid-column-start: initial;
-    //     grid-column-end: initial;
-    //     grid-row-start: initial;
-    //     grid-row-end: initial;
-    //   }
-    //   .services__item-left {
-    //     grid-column-start: initial;
-    //     grid-column-end: initial;
-    //     grid-row-start: initial;
-    //     grid-row-end: initial;
-    //   }
-    // }
+  .button {
+    padding: 12px 24px;
   }
 
   @media (max-width: 920px) {
@@ -114,10 +61,7 @@
     }
     &__item-right {
       order: -1;
-      // grid-column-start: initial !important;
-      // grid-column-end: initial !important;
-      // grid-row-start: initial !important;
-      // grid-row-end: initial !important;
+
       img {
         height: 320px;
         width: 440px;
@@ -126,12 +70,7 @@
         margin-right: auto;
       }
     }
-    // &__item-left {
-    //   grid-column-start: initial !important;
-    //   grid-column-end: initial !important;
-    //   grid-row-start: initial !important;
-    //   grid-row-end: initial !important;
-    // }
+
   }
 
   @media (max-width: 768px) {

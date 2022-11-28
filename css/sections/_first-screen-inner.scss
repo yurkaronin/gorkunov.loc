@@ -1,0 +1,25 @@
+.first-screen-inner {
+  .services__buttons .button {
+    padding: 30px 70px;
+  }
+  .services__text {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 1024px) {
+    .services__buttons .button {
+      padding: 1.3em 3em;
+      font-size: 14px;
+    }
+    .services__text {
+      margin-bottom: 1em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .services__buttons .button {
+      padding: 20px 30px;
+      font-size: 14px;
+    }
+  }
+}

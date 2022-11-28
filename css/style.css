@@ -817,6 +817,28 @@ input[type=radio].visually-hidden {
   }
 }
 
+.first-screen-inner .services__buttons .button {
+  padding: 30px 70px;
+}
+.first-screen-inner .services__text {
+  margin-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  .first-screen-inner .services__buttons .button {
+    padding: 1.3em 3em;
+    font-size: 14px;
+  }
+  .first-screen-inner .services__text {
+    margin-bottom: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .first-screen-inner .services__buttons .button {
+    padding: 20px 30px;
+    font-size: 14px;
+  }
+}
+
 .services {
   padding-top: 36px;
 }
@@ -869,6 +891,9 @@ input[type=radio].visually-hidden {
 }
 .services__buttons .button:last-child {
   margin-right: 0;
+}
+.services .button {
+  padding: 12px 24px;
 }
 @media (max-width: 920px) {
   .services__item-grid {
@@ -1161,7 +1186,7 @@ input[type=radio].visually-hidden {
 }
 
 .announce-cards {
-  padding: 100px 0 54px;
+  padding: 100px 0 45px;
 }
 .announce-cards__list {
   list-style: none;
@@ -1279,7 +1304,7 @@ input[type=radio].visually-hidden {
 }
 @media (max-width: 800px) {
   .announce-cards__list {
-    gap: 16px;
+    gap: 32px 16px;
   }
   .announce-cards__name {
     font-size: 28px;
@@ -1350,7 +1375,7 @@ input[type=radio].visually-hidden {
 }
 .call-to-action .button {
   margin-right: 0;
-  padding: 31px 70px;
+  padding: 30px 80px;
   height: initial;
   font-size: 16px;
 }
