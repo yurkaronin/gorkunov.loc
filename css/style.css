@@ -865,6 +865,7 @@ input[type=radio].visually-hidden {
 }
 .services__buttons .button {
   margin-right: 32px;
+  padding: 12px 24px;
 }
 .services__buttons .button:last-child {
   margin-right: 0;
