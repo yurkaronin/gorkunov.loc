@@ -3,7 +3,7 @@
     <div class="header__grid">
 
       <div class="logo">
-        <a href="#">
+        <a href="./index.php">
           <img src="./img/logo.svg" alt="логотип Горкунов" width="181">
         </a>
       </div>
