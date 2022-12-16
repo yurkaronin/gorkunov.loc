@@ -13,7 +13,7 @@
   <?php include './components/styles_include.php'?>
 </head>
 
-<body class="body">
+<body class="body body--inner-page body--inner--about">
 
   <?php include './components/header.php';?>
 
@@ -21,13 +21,13 @@
 
     <?php
     // первый экран главной страницы
-    include 'components/first-screen.php';
+    // include 'components/first-screen.php';
     // анонсы направлений услуг
-    include 'components/services.php';
+    // include 'components/services.php';
     // персональный блок с дядькой
-    include 'components/personal-card.php';
+    include 'components/personal-card-mod.php';
     // Преимущества 1 вариант (без заголовка)
-    include 'components/benefits.php';
+    // include 'components/benefits.php';
     ?>
   </main>
 
