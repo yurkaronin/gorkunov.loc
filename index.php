@@ -38,6 +38,7 @@
       <div class="wrapper">
         <ul class="list-reset">
           <li><a href="./home.php" target="_blank">Главная страница</a></li>
+          <li><a href="./about-me.php" target="_blank">Обо мне</a></li>
           <li><a href="./avtosledovanie.php" target="_blank">Автоследование</a></li>
 
         </ul>

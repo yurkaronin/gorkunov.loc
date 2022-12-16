@@ -1108,7 +1108,6 @@ input[type=radio].visually-hidden {
   .benefits__grid {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding-top: 24px;
     padding-bottom: 50px;
   }
   .benefits__icon {
