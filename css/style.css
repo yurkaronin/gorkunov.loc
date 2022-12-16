@@ -1014,6 +1014,9 @@ input[type=radio].visually-hidden {
   line-height: 1;
   color: #00f0c0;
 }
+.personal-card__details {
+  margin-bottom: 32px;
+}
 @media (max-width: 1440px) {
   .personal-card__grid {
     grid-template-columns: 1fr 1fr;
