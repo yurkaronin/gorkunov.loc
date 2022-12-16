@@ -1120,6 +1120,33 @@ input[type=radio].visually-hidden {
     font-size: 55px;
     margin-bottom: 0.5em;
   }
+  .personal-card--long .personal-card__grid {
+    grid-template-columns: 1fr;
+  }
+  .personal-card--long .personal-card__description {
+    grid-column-start: initial;
+    grid-column-end: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
+  }
+  .personal-card--long .personal-card__photo {
+    order: -1;
+    grid-column-start: initial;
+    grid-column-end: initial;
+    grid-row-start: initial;
+    grid-row-end: initial;
+  }
+  .personal-card--long .personal-card__title {
+    font-size: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .personal-card__blockquote {
+    margin-bottom: 12px;
+  }
+  .personal-card--long .personal-card__title {
+    font-size: 48px;
+  }
 }
 @media (max-width: 425px) {
   .personal-card {
