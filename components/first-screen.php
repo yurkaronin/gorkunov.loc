@@ -11,7 +11,7 @@
         <p class="subtitle">Инвестируем в фондовый рынок вместе</p>
         <p class="title"><span>2022</span> - время возможностей</p>
 
-        <a href="#" class="button button--big">Присоединиться</a>
+        <a href="#" class="button button--big"><span>Присоединиться</span></a>
       </div>
 
       <a href="#" class="link-more">

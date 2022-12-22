@@ -25,9 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // подключаем файлы тут
   includeFiles("./js/parts/accordion.js");
   includeFiles("./js/parts/smoothscroll.js");
-  // includeFiles("./js/parts/sliders.js");
-  // includeFiles("./js/parts/input-validate.js");
-  // includeFiles("./js/parts/yandex.map.js");
 
   // небольшие программы
   // Проверяем состояние прокрутки страницы. если прокрутка есть - перекрашиваем шапку
@@ -60,6 +57,18 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
   };
+
+  let buttons = document.querySelectorAll('.button');
+for( let item of buttons) {
+  item.onmousemove = function(e) {
+    const X = e.pageX - item.offsetLeft;
+    const Y = e.pageY - item.offsetTop;
+
+    item.style.setProperty('--x', X + 'px');
+    item.style.setProperty('--y', Y + 'px');
+  };
+}
+
 
 
 

@@ -197,7 +197,6 @@ input[type=radio].visually-hidden {
   border: 1px solid;
   border-color: var(--green);
   cursor: pointer;
-  box-shadow: none;
   border-radius: 40px;
   color: var(--black);
   text-align: center;
@@ -206,6 +205,37 @@ input[type=radio].visually-hidden {
   font-size: 14px;
   line-height: 1;
   font-family: var(--jost);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.button::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  border-radius: 50%;
+  background-color: #FFCD67;
+  z-index: 1;
+  transition: all 0.3s;
+  transform: translate(-50%, -50%);
+}
+.button span {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s;
+}
+.button:hover {
+  border-color: #FFCD67;
+}
+.button:hover span {
+  color: black;
+}
+.button:hover::before {
+  width: 300px;
+  height: 300px;
 }
 .button--transparent {
   background-color: transparent;
