@@ -61,11 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let buttons = document.querySelectorAll('.button');
 for( let item of buttons) {
   item.onmousemove = function(e) {
-    const X = e.pageX - item.offsetLeft;
-    const Y = e.pageY - item.offsetTop;
+    let x = e.pageX - item.offsetLeft;
+    let y = e.pageY - item.offsetTop;
 
-    item.style.setProperty('--x', X + 'px');
-    item.style.setProperty('--y', Y + 'px');
+    item.style.setProperty('--x', x + 'px');
+    item.style.setProperty('--y', y + 'px');
   };
 }
 

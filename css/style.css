@@ -206,7 +206,7 @@ input[type=radio].visually-hidden {
   line-height: 1;
   font-family: var(--jost);
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.8s;
 }
 .button::before {
   content: "";
@@ -214,18 +214,18 @@ input[type=radio].visually-hidden {
   width: 0;
   height: 0;
   position: absolute;
-  left: var(--x);
   top: var(--y);
+  left: var(--x);
   border-radius: 50%;
   background-color: #FFCD67;
   z-index: 1;
-  transition: all 0.3s;
+  transition: width 0.8s, height 0.8s;
   transform: translate(-50%, -50%);
 }
 .button span {
   position: relative;
   z-index: 2;
-  transition: all 0.3s;
+  transition: all 0.8s;
 }
 .button:hover {
   border-color: #FFCD67;
@@ -234,8 +234,8 @@ input[type=radio].visually-hidden {
   color: black;
 }
 .button:hover::before {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
 }
 .button--transparent {
   background-color: transparent;
