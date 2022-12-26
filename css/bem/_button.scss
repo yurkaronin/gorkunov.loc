@@ -23,29 +23,13 @@
   overflow: hidden;
   transition: all 0.8s;
 
-  &::before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    border-radius: 50%;
-    background-color: #FFCD67;
-    z-index: 1;
-    transition: width 0.8s, height 0.8s;
-    transform: translate(-50%,-50%);
-  }
-
   span {
     position: relative;
     z-index: 2;
-    transition: all 0.8s;
   }
 
   &:hover {
-    border-color: #FFCD67;
+    border-color: #ffcd67;
     span {
       color: black;
     }
@@ -79,4 +63,81 @@
       font-size: 14px;
     }
   }
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.8s, color 0.8s, border-color 0.8s;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    border-radius: 50%;
+    background-color: #ffcd67;
+    z-index: 1;
+    transition: width 0.8s, height 0.8s;
+    transform: translate(-50%, -50%);
+  }
+  span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.8s;
+  }
+
+  &:hover {
+    border-color: transparent;
+    span {
+      color: black;
+    }
+    &::before {
+      width: 600px;
+      height: 600px;
+    }
+  }
+}
+
+.andik {
+  background-color: transparent;
+
+  span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #ffcd67;
+    transform: translateY(150%) rotate(45deg);
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+  }
+
+  span:nth-child(1) {
+    --n: 1;
+  }
+
+  span:nth-child(2) {
+    --n: 2;
+  }
+
+  span:nth-child(3) {
+    --n: 3;
+  }
+
+  span:nth-child(4) {
+    --n: 4;
+  }
+
+  &:hover {
+    color: var(--black);
+    span {
+      transform: translateY(0) scale(2) rotate(45deg);
+    }
+  }
+
 }

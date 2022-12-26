@@ -24,7 +24,9 @@
       </div>
 
       <div class="header__button">
-        <a href="" class="button button--transparent"><span>заказать звонок</span></a>
+        <a href="" class="button button--transparent andik">заказать звонок
+        <span></span><span></span><span></span><span></span>
+        </a>
       </div>
 
       <div class="social">

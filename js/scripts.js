@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   };
 
-  let buttons = document.querySelectorAll('.button');
+  let buttons = document.querySelectorAll('.ripple');
 for( let item of buttons) {
   item.onmousemove = function(e) {
     let x = e.pageX - item.offsetLeft;

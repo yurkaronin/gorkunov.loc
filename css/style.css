@@ -208,27 +208,12 @@ input[type=radio].visually-hidden {
   overflow: hidden;
   transition: all 0.8s;
 }
-.button::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: var(--y);
-  left: var(--x);
-  border-radius: 50%;
-  background-color: #FFCD67;
-  z-index: 1;
-  transition: width 0.8s, height 0.8s;
-  transform: translate(-50%, -50%);
-}
 .button span {
   position: relative;
   z-index: 2;
-  transition: all 0.8s;
 }
 .button:hover {
-  border-color: #FFCD67;
+  border-color: #ffcd67;
 }
 .button:hover span {
   color: black;
@@ -258,6 +243,74 @@ input[type=radio].visually-hidden {
     padding: 20px 30px;
     font-size: 14px;
   }
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.8s, color 0.8s, border-color 0.8s;
+}
+.ripple::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  border-radius: 50%;
+  background-color: #ffcd67;
+  z-index: 1;
+  transition: width 0.8s, height 0.8s;
+  transform: translate(-50%, -50%);
+}
+.ripple span {
+  position: relative;
+  z-index: 2;
+  transition: color 0.8s;
+}
+.ripple:hover {
+  border-color: transparent;
+}
+.ripple:hover span {
+  color: black;
+}
+.ripple:hover::before {
+  width: 600px;
+  height: 600px;
+}
+
+.andik {
+  background-color: transparent;
+}
+.andik span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #ffcd67;
+  transform: translateY(150%) rotate(45deg);
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+.andik span:nth-child(1) {
+  --n: 1;
+}
+.andik span:nth-child(2) {
+  --n: 2;
+}
+.andik span:nth-child(3) {
+  --n: 3;
+}
+.andik span:nth-child(4) {
+  --n: 4;
+}
+.andik:hover {
+  color: var(--black);
+}
+.andik:hover span {
+  transform: translateY(0) scale(2) rotate(45deg);
 }
 
 .title {
@@ -511,6 +564,20 @@ input[type=radio].visually-hidden {
   padding: 12px 0;
 }
 
+.social__link {
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.social__link svg path {
+  transition: fill 0.3s;
+}
+.social__link:hover {
+  background-color: #ffcd67;
+  border-color: #ffcd67;
+}
+.social__link:hover svg path {
+  fill: #1b1e1e;
+}
+
 .logo {
   width: 180px;
 }
@@ -557,9 +624,9 @@ input[type=radio].visually-hidden {
   line-height: 1.5;
   color: #ffffff;
   font-family: var(--jost);
-  transition: all 0.3s;
   padding: 13px 20px;
   border-radius: 24px;
+  transition: background-color 0.3s, color 0.3s;
 }
 .menu__link:hover {
   background-color: var(--white);
